@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/man2"
+        android:src="@drawable/galaxy"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="61dp" />
 
@@ -22,16 +22,17 @@
         android:background="@drawable/edittext_shape"
         android:ems="10"
         android:hint="input.."
+        android:gravity="center"
         android:importantForAutofill="no"
         android:inputType="number"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/background"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.436" />
 
     <EditText
         android:id="@+id/num2"
@@ -40,16 +41,17 @@
         android:background="@drawable/edittext_shape"
         android:ems="10"
         android:hint="input.."
+        android:gravity="center"
         android:importantForAutofill="no"
         android:inputType="number"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintHorizontal_bias="0.765"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/background"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.436" />
 
     <Button
         android:id="@+id/buttonPlus"
@@ -57,14 +59,14 @@
         android:layout_height="50dp"
         android:background="@drawable/style_button_circle"
         android:text="@string/plus"
-        android:textColor="#ffa726"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="@+id/background"
         app:layout_constraintTop_toTopOf="@+id/background"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintVertical_bias="0.649" />
 
     <Button
         android:id="@+id/buttonMinus"
@@ -72,14 +74,14 @@
         android:layout_height="50dp"
         android:background="@drawable/style_button_circle"
         android:text="@string/minus"
-        android:textColor="#ffa726"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/background"
-        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintHorizontal_bias="0.739"
         app:layout_constraintStart_toStartOf="@+id/background"
         app:layout_constraintTop_toTopOf="@+id/background"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintVertical_bias="0.649" />
 
     <Button
         android:id="@+id/buttonMultiply"
@@ -87,14 +89,14 @@
         android:layout_height="50dp"
         android:background="@drawable/style_button_circle"
         android:text="@string/multiply"
-        android:textColor="#ffa726"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="@+id/background"
         app:layout_constraintTop_toTopOf="@+id/background"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.823" />
 
     <Button
         android:id="@+id/buttonDivide"
@@ -102,27 +104,24 @@
         android:layout_height="50dp"
         android:background="@drawable/style_button_circle"
         android:text="@string/divide"
-        android:textColor="#ffa726"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintHorizontal_bias="0.739"
         app:layout_constraintStart_toStartOf="@+id/background"
         app:layout_constraintTop_toTopOf="@+id/background"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.823" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:background="@drawable/textview_background"
-        android:text="output.."
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="@+id/background"
-        app:layout_constraintTop_toTopOf="@+id/background"
-        app:layout_constraintVertical_bias="0.26999998" />
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="100dp"
+          android:layout_height="50dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.87"
+          app:layout_constraintStart_toStartOf="@+id/background"
+          app:layout_constraintTop_toTopOf="@+id/background"
+          app:layout_constraintVertical_bias="0.26999998" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

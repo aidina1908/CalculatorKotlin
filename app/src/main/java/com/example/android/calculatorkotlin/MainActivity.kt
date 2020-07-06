@@ -1,5 +1,6 @@
 package com.example.android.calculatorkotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_output.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,22 +16,38 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val result = findViewById<TextView>(R.id.textView)
+        val texView = findViewById<TextView>(R.id.textView)
 
         buttonPlus.setOnClickListener(){
             add()
+
+            val intent = Intent(this, OutputActivity::class.java)
+            intent.putExtra("output",textView.text.toString())
+            startActivity(intent)
         }
 
         buttonMinus.setOnClickListener(){
             minus()
+
+            val intent = Intent(this, OutputActivity::class.java)
+            intent.putExtra("output",textView.text.toString())
+            startActivity(intent)
         }
 
         buttonMultiply.setOnClickListener(){
             multiply()
+
+            val intent = Intent(this, OutputActivity::class.java)
+            intent.putExtra("output",textView.text.toString())
+            startActivity(intent)
         }
 
         buttonDivide.setOnClickListener(){
             divide()
+
+            val intent = Intent(this, OutputActivity::class.java)
+            intent.putExtra("output",textView.text.toString())
+            startActivity(intent)
         }
     }
 
